@@ -505,25 +505,6 @@ end
 		bottom:0px;
 	}
 /*there you go Rarity*/
-.ghost-button {
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  transition: background-color 0.2s ease-out,
-              color 0.2s ease-out;
-}
-.ghost-button:hover,
-.ghost-button:active {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.3s ease-in,
-              color 0.3s ease-in;
-}
 
 body {
     text-decoration-color: white;
@@ -567,12 +548,38 @@ p {
 		color: #fff;
     }
         
-    @media (max-width: 767px) {
-
-.content {
-margin-left: 8px;
-margin-right: 8px;
+    /* สำหรับพวกหำเล็ก
+	* --------------------------------------- */       
+    @media only screen and (max-width: 767px) {
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+   margin-bottom: 10px;
 }
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+    foot {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+    
+    .content {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 
 num {
     font-size: 3em;
@@ -659,11 +666,6 @@ background-position: center;
         background-position: center;
     }
 
-.content {
-margin-left: 50px;
-margin-right: 50px;
-word-wrap: break-word;
-}
 
     #section0 h1{
 		color: white;
@@ -678,6 +680,39 @@ word-wrap: break-word;
         color: black;
     }
         
+/* สำหรับพวกหำใหญ่
+	* --------------------------------------- */
+ @media only screen and (min-width: 767px) {
+
+     .ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+     
+foot {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content {
+margin-left: 50px;
+margin-right: 50px;
+word-wrap: break-word;
+}
 
 	</style>
 
@@ -729,7 +764,7 @@ word-wrap: break-word;
 <div id="fullpage">
 	<div class="section" id="section0">
 		<div class="intro">
-			<h1><num>9</num><br>เรื่องที่คุณ(อาจ)ยังไม่รู้เกี่ยวกับ "อวกาศ”</div><br><div class="fb-like" data-href="//hoof.flatfact.com/space-facts/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div><a href="#secondPage"><div class="arrow bounce"></div></a></h1>
+			<h1><num>9</num><br>เรื่องที่คุณ(อาจ)ยังไม่รู้เกี่ยวกับ "อวกาศ”</div><br><div class="fb-like" data-href="//hoof.flatfact.com/space-facts/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div><a href="#secondPage"><div class="arrow bounce"></div></a></h1>
 		
 	</div>
 	<div class="section" id="section1">
@@ -779,6 +814,6 @@ word-wrap: break-word;
 	</div>
    
     <div class="section" id="section10">
-    <div class="intro"><h2></div><div align="center">CC Subthai_Production, Hoof.fr and Flatfact.com<br>บทความต่างๆในเว็บไซต์ อนุญาตให้นำไปเผยแพร่และแก้ไขได้โดยต้องอ้างอิงที่มาและไม่ใช้เพื่อการค้า ตาม<a href="https://creativecommons.org/licenses/by-nc/4.0/">สัญญาอนุญาตครีเอทีฟคอมมอนส์ 4.0 International</a>.<br>Powered by Jquery Fullpage.js on<a href="https://github.com/alvarotrigo/fullPage.js"> Github</a><br><br><a class="button button-primary" href="//facebook.com/subthaiTV">Facebook Page</a><a class="button button-primary" href="//github.com/flatfact">Fork Me On GitHub</a><br><br><br><br><a href="#firstPage"><div id="animated-example" class="animated bounce"><img src="//farm8.staticflickr.com/7601/16623750648_f4c543a294_o.png" width="40px"></div></a></div></div></div></div></h2>
+    <div class="intro"><h2></div><div align="center"><foot>CC Subthai_Production, Hoof.fr and Flatfact.com<br>บทความต่างๆในเว็บไซต์ อนุญาตให้นำไปเผยแพร่และแก้ไขได้โดยต้องอ้างอิงที่มาและไม่ใช้เพื่อการค้า ตาม<a href="https://creativecommons.org/licenses/by-nc/4.0/">สัญญาอนุญาตครีเอทีฟคอมมอนส์ 4.0 International</a>.</foot><br>Script by Jquery Fullpage.js on<a href="https://github.com/alvarotrigo/fullPage.js"> Github</a><br><br><a class="button button-primary" href="//facebook.com/subthaiTV">Facebook Page</a><a class="button button-primary" href="//github.com/flatfact">Fork Me On GitHub</a><br><br><br><br><a href="#firstPage"><div id="animated-example" class="animated bounce"><img src="//farm8.staticflickr.com/7601/16623750648_f4c543a294_o.png" width="40px"></div></a></div></div></div></div></h2>
 </body>
 </html>
